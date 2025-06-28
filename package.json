@@ -10,7 +10,7 @@
   "scripts": {
     "prepare": "node scripts/prepare.mjs",
     "preinstall": "node scripts/block-npm-install.js",
-    "build": "turbo run build",
+    "build": "NODE_OPTIONS='--max-old-space-size=8192' turbo run build",
     "build:backend": "turbo run build:backend",
     "build:frontend": "turbo run build:frontend",
     "build:nodes": "turbo run build:nodes",
